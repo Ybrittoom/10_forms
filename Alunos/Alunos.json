@@ -1,0 +1,12 @@
+[
+    {
+        "aluno": "yago",
+        "ausente": "sim",
+        "notas": 9.5
+    },
+    {
+        "aluno": "Enaylie",
+        "ausente": "nao",
+        "notas": 10
+    }
+]

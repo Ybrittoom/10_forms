@@ -1,0 +1,16 @@
+[
+    {
+        "Carro": "BMW X6",
+        "Marca": "BMW",
+        "ano": 2024,
+        "Modelo": "X6",
+        "Preco": 595000.00
+    },
+    {
+        "Carro": "BMW 5 Series",
+        "Marca": "BMW",
+        "ano": 2024,
+        "Modelo": "5 Series",
+        "Preco": 272000.00
+    }
+]
