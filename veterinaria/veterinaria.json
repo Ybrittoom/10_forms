@@ -1,0 +1,14 @@
+[
+    {
+        "nome_do_animal": "Kenny",
+        "familia_do_animal": "felino",
+        "raca": "siberiano",
+        "dono_do_animal": "yago"
+    },
+    {
+        "nome_do_animal": "alaska",
+        "familia_do_animal": "canina",
+        "raca": "husk siberiano",
+        "dono_do_animal": "rosekely"
+    }
+]

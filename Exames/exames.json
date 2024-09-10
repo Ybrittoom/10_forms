@@ -1,0 +1,14 @@
+[
+    {
+        "exame": "Tomohrafia",
+        "tipo": "imagem",
+        "data_de_realizaçao": "2022-11-04",
+        "resultado": "Normal"
+    },
+    {
+        "exame": "Radiografia",
+        "tipo": "imagem",
+        "data_de_realizaçao": "2024-02-19",
+        "resultado": "Alteraçao"
+    }
+]

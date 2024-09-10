@@ -1,0 +1,14 @@
+[
+    {
+        "livro": "Diario de Anna Frank",
+        "autor": "Anna Frank",
+        "categoria": "AutoBiografia",
+        "ano_de_publicacao": "25 de junho de 1947"
+    },
+    {
+        "livro": "Diario de um Banana",
+        "autor": "Jeff Kinney",
+        "categoria": "Humor",
+        "ano_de_publicacao": "1 de Fevereiro de 2028"
+    }
+]

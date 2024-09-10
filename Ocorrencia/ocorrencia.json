@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Marta",
+        "local_ocorrido": "SuperMercado",
+        "data_do_ocorrido": "2024-02-04",
+        "codigo_penal": "121"
+    },
+    {
+        "nome": "Pedro",
+        "local_ocorrido": "Centro da cidade",
+        "data_do_ocorrido": "2023-12-31",
+        "codigo_penal": "157"
+    }
+]

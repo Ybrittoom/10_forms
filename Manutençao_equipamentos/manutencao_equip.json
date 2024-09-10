@@ -1,0 +1,14 @@
+[
+    {
+        "equipamento": "Caminhao",
+        "data_de_manutencao": "2024-11_02",
+        "status_do_equipamento": "falta de gasolina",
+        "custo": "baixo"
+    },
+    {
+        "equipamento": "Empilhadeira",
+        "data_de_manutencao": "2024_02_04",
+        "status_do_equipamento": "quebrado",
+        "custo": "medio"
+    }
+]

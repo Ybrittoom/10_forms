@@ -1,0 +1,16 @@
+[
+    {
+        "pais": "Canada",
+        "cidade": "Columbia Britanica",
+        "duracao_de_dias": 21,
+        "data_de_partida": "2024-11-07",
+        "valor": 3200.00
+    },
+    {
+        "pais": "Estados Unidos Da America",
+        "cidade": "Nova Iorque",
+        "duracao_de_dias": 14,
+        "data_de_partida": "2024-09-10",
+        "valor": 2300.00
+    }
+]
