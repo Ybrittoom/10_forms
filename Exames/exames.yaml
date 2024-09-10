@@ -1,0 +1,11 @@
+
+- exame: Tomografia
+  tipo: imagem
+  data_de_realizacao: 2022-11-04
+  resultado: normal
+  
+
+- exame: Radiografia
+  tipo: Imagem
+  data_de_realizacao: 2024-02-19
+  resultado: alteracao
