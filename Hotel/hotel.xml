@@ -1,0 +1,17 @@
+<Hotel>
+
+    <hotel>
+        <quarto> 1201 </quarto>
+        <Andar> 12 </Andar>
+        <Clientes> Chris Bumsted e Ramon Dino </Clientes>
+        <dias> 31 </dias>
+    </hotel>
+
+    <hotel>
+        <quarto> 1101 </quarto>
+        <Andar> 11 </Andar>
+        <Clientes> Renato Carini e Julio Balestrin </Clientes>
+        <dias> 35 </dias>
+    </hotel>
+
+</Hotel>

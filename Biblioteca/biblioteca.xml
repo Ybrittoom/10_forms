@@ -1,0 +1,18 @@
+<Biblioteca>
+    <livro>
+        
+        <titulo> Diario de Anna Frank </titulo>
+        <autor> Anna Frank </autor>
+        <categoria> AutoBiografia </categoria>
+        <ano_de_publicacao> 25 de junho de 1947 </ano_de_publicacao>
+
+    </livro>
+
+    <livro>
+        <titulo> Diario de um banana </titulo>
+        <autor> Jeff kinney </autor>
+        <categoria> Humor </categoria>
+        <ano_de_publicacao> 1 de Fevereiro de 2008 </ano_de_publicacao>
+    </livro>
+
+</Biblioteca>

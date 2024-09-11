@@ -1,0 +1,17 @@
+<Manutencao_de_equipamentos>
+
+    <Equipamento>
+        <equipamento> Caminhao </equipamento>
+        <data_de_manutencao> 2024-11-02 </data_de_manutencao>
+        <status_do_equipamento> Falta de gasolina </status_do_equipamento>
+        <custo> Baixo </custo>
+    </Equipamento>
+
+     <Equipamento>
+        <equipamento> Empilhadeira </equipamento>
+        <data_de_manutencao> 2024-02-04 </data_de_manutencao>
+        <status_do_equipamento> Quebrado </status_do_equipamento>
+        <custo> Medio </custo>
+    </Equipamento>
+
+</Manutencao_de_equipamentos>

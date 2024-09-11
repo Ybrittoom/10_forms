@@ -1,0 +1,17 @@
+<Ocorrencia>
+
+    <ocorrencia>
+        <nome> Marta  </nome>
+        <local_ocorrido> SuperMercado </local_ocorrido>
+        <data_do_ocorrido> 2024-02-04 </data_do_ocorrido>
+        <codigo_penal> 121 </codigo_penal>
+    </ocorrencia>
+
+    <ocorrencia>
+        <nome> Pedro  </nome>
+        <local_ocorrido> Centro da cidade  </local_ocorrido>
+        <data_do_ocorrido> 2023-12-31 </data_do_ocorrido>
+        <codigo_penal> 157 </codigo_penal>
+    </ocorrencia>
+
+</Ocorrencia>

@@ -1,0 +1,17 @@
+<Viagens> 
+
+    <viagen>
+        <pais> Canada  </pais>
+        <cidade> Columbia Britanica </cidade>
+        <duracao_de_dias> 21 </duracao_de_dias>
+        <data_de_partidade> 2024-11-07 </data_de_partidade>
+        <valor> 3200.00 </valor>
+    </viagen>
+
+    <viagen>
+        <pais> Estados Unidos Da America </pais>
+        <cidade> Nova Iorque </cidade>
+        <duracao_de_dias> 14 </duracao_de_dias>
+        <data_de_partidade> 2024-09-10 </data_de_partidade>
+        <valor> 2300.00 </valor>
+    </viagen>

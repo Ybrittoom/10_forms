@@ -1,0 +1,21 @@
+<Usuario> 
+
+    <usuario>
+        <nome> Yago </nome>
+        <idade> 16 </idade>
+        <sexo> Masculino </sexo>
+        <email> yagoemanuel99@gmail.com </email>
+        <telefone> 19-98985-1965 </telefone>
+        <endereco> Rua Joaquim Inacio Valente, Portal Vale Das Perolas </endereco>
+    </usuario>
+
+    <usuario>
+        <nome> Kaua </nome>
+        <idade> 16 </idade>
+        <sexo> Masculino </sexo>
+        <email> lopezl019@gmail.com</email>
+        <telefone> 19-99999-4999 </telefone>
+        <endereco> Rua Jose Correia, Virgilio Basso </endereco>
+    </usuario>
+
+</Usuario>

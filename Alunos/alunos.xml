@@ -1,0 +1,15 @@
+<Alunos>
+
+    <alunos>
+        <aluno> Yago </aluno>
+        <ausente> sim </ausente>
+        <notas> 9.5 </notas>
+    </alunos>
+
+    <alunos>
+        <aluno> Enaylie </aluno>
+        <ausente> nao  </ausente>
+        <notas> 10 </notas>
+    </alunos>
+
+</Alunos>
