@@ -1,7 +1,7 @@
-aluno: "yago"
-ausente: "sim"
-notas: 9.5
+- aluno: "yago"
+  ausente: "sim"
+  notas: 9.5
 
-aluno: "enaylie"
-ausente: "nao"
-notas: 10 
+- aluno: "enaylie"
+  ausente: "nao"
+  notas: 10 

@@ -1,0 +1,10 @@
+- equipamento: Caminhao
+  data_de_manutencao: 2024-11-02
+  status_de_equipamento: Falta de gasolina
+  custo: baixo
+
+
+- equipamento: Empilhadeira
+  data_de_manutencao: 2024-02-04
+  status_de_equipamento: Quebrado
+  custo: medio

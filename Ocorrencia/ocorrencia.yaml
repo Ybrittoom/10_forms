@@ -1,0 +1,9 @@
+- nome: Marta
+  local_do_ocorrido: SuperMercado
+  data_do_ocorrido: 2024-02-04
+  codigo_penal: 121
+
+- nome: Pedro
+  local_do_ocorrido: Centro da cidade
+  data_do_ocorrido: 2023-12-31
+  codigo_penal: 157
