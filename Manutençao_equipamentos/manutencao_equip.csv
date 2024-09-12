@@ -1,0 +1,3 @@
+id, equipamento, data_de_manutecao, status_equipamento, custo
+2, Caminhao, 2024-11-02, gasolina acabou, baixo
+1, Empilhadeira, 2024-02-04, quebrado, medio
