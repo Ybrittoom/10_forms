@@ -2,13 +2,13 @@
     {
         "exame": "Tomografia",
         "tipo": "imagem",
-        "data_de_realizaçao": "2022-11-04",
+        "data_de_realizacao": "2022-11-04",
         "resultado": "Normal"
     },
     {
         "exame": "Radiografia",
         "tipo": "imagem",
-        "data_de_realizaçao": "2024-02-19",
+        "data_de_realizacao": "2024-02-19",
         "resultado": "Alteraçao"
     }
 ]

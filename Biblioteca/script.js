@@ -1,8 +1,16 @@
 fetch('Biblioteca.json') //buscando o arquivo JSON
     .then(Response => Response.json())
     .then( data => {
-        console.log(data)
+        
+        data.forEach(biblio => {
+            
+            console.log("Livro:", biblio.livro)
+            console.log("Autor:", biblio.autor)
+            console.log("Categoria:", biblio.categoria)
+            console.log("Ano de Publicaçao:", biblio.ano_de_publicacao)
+            console.log("----------")
+        });
     })
     .catch (error => {
-        console.error('Error ao ler o arquivo json')
+        console.error('Error ao ler o arquivo json', error)
     })
