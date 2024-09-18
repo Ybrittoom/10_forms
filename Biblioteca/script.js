@@ -4,6 +4,7 @@ fetch('Biblioteca.json') //buscando o arquivo JSON
         
         data.forEach(biblio => {
             
+            console.log("JSON")
             console.log("Livro:", biblio.livro)
             console.log("Autor:", biblio.autor)
             console.log("Categoria:", biblio.categoria)

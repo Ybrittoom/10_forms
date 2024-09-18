@@ -1,27 +1,27 @@
-function carregarYAML(file) {
-    fetch('hotel.yaml')
-        .then(Response => {
-            if (!Response.ok) {
-                throw new Error("Erro ao carregar o arquivo")
-            } 
+async function carregarYAML(file ) {
+    try {
 
-            //converte a respota http para texto(conteudo YAML)
-            return Response.text()
-        })
-        .then (text => {
-            const Hotel = jsyaml.load(text)
+        const response = await fetch('hotel.yaml')
 
-            Hotel.forEach(hotel => {
-                console.log("Quarto:", hotel.quarto)
-                console.log("Andar:", hotel.andar)
-                console.log("Cliente:", hotel.cliente)
-                console.log("Dias:", hotel.dias)
-                console.log("**************")
-            });
-        })
-        .catch (error => {
-            console.log("Erro ao carregar o arquivo YAML:", error)
-        })
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        } 
+
+        const text = await response.text()
+
+        const Hotel = jsyaml.load(text)
+        
+        Hotel.forEach(hotel => {
+            console.log("YAML")
+            console.log("Quarto:", hotel.quarto)
+            console.log("Andar:", hotel.andar)
+            console.log("Cliente:", hotel.cliente)
+            console.log("Dias:", hotel.dias)
+            console.log("************")
+        });
+    } catch (error) {
+        console.log("Erro ao carregar o arquivo:", error)
+    }
 }
 
 carregarYAML('hotel.yaml')

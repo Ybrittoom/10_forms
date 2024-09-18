@@ -1,29 +1,26 @@
-function carregarYAML(file) {
-    fetch('biblioteca.yaml')
-        .then(Response => {
-            if (!Response.ok) {
-                throw new Error("erro ao carregar o arquivo")
-            } 
+async function carregarYAML(file ) {
+    try {
+        const response = await fetch('biblioteca.yaml')
 
-            return Response.text()
-        })
-        .then (text => {
-            const biblioteca = jsyaml.load(text)
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
 
-            biblioteca.forEach(biblio => {
-                console.log("Livro:", biblio.livro)
-                console.log("Autor:", biblio.autor)
-                console.log("Categoria:", biblio.categoria)
-                console.log("Ano de Publicaçao:", biblio.ano_de_publicacao)
-                console.log("********************")
-            });
+        const text = await response.text()  
 
-        })
-        .catch (error => {
-            console.log("Erro ao carregar o arquivo YAML:", error)
-        })
+        const biblioteca = jsyaml.load(text)
 
-
+        biblioteca.forEach(biblio => {
+            console.log("yaml")
+            console.log("Livro:", biblio.livro)
+            console.log("Autor:", biblio.autor)
+            console.log("Categoria:", biblio.categoria)
+            console.log("Ano de Publicaçao:", biblio.ano_de_publicaçao)
+            console.log("**************")
+        });
+    }   catch (error) {
+        console.log("Erro ao carregar o arquivo:",  error)
+    }
 }
 
 carregarYAML('biblioteca.yaml')

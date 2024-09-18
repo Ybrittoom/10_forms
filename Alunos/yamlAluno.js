@@ -1,27 +1,26 @@
-function carregarYAML(file) {
+async function carregarYAML(file ) {
+    try { //inicia um bloco de codigo onde as operaçoes podem falhar 
+        const response = await fetch('alunos.yaml')
 
-    fetch('alunos.yaml')
-        .then(Response => {
-            if (!Response.ok) {
-                throw new Error("erro ao carregar o arquivo")
-            }
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
+        //cria uma constante chamada response e armazena o resultado da chamda http
+        const text = await response.text();
 
-            //converte a resposta http para texto(conteudo do yaml)
-            return Response.text();
-        })
-        .then (text => {
-            const alunos = jsyaml.load(text)
+        const alunos = jsyaml.load(text)
 
-            alunos.forEach(aluno  => {
-                console.log("Aluno:", aluno.aluno)
-                console.log("Ausente:", aluno.ausente)
-                console.log("Nota:", aluno.nota)
-                console.log("************")
-            });
-        })
-        .catch (error => {
-            console.log("Erro ao carregar o arquivo YAML:", error)
-        })
+        alunos.forEach(aluno  => {
+            console.log("Yaml")
+            console.log("Aluno:", aluno.aluno)
+            console.log("Ausente:", aluno.ausente)
+            console.log("Nota:", aluno.nota)
+            console.log("***************")
+        });
+        //se algum erro acontecer no bloco 'try', o bloco 'catch' sera ativado
+    }   catch (error) {
+        console.log("Erro ao carregar o arquivo:", error)
+    }
+    
 }
-
-carregarYAML('alunos.yaml')
+ carregarYAML('alunos.yaml')
