@@ -1,7 +1,13 @@
-fetch('veterinaria.json')
-    .then(Response => Response.json())
-    .then( data => {
-        
+async function carregarJSON() {
+    try {
+        const response = await fetch('veterinaria.json')
+
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o aruqivo")
+        }
+
+        const  data = await response.json()
+
         data.forEach(veterinaria => {
             
             console.log("Nome do Animal:", veterinaria.nome_do_animal)
@@ -11,7 +17,13 @@ fetch('veterinaria.json')
             console.log("-----------")
             
         });
-    })
-    .catch(error => {
-        console.error('Erro ao ler o arquivo JSON')
-    })
+
+    } catch (error) {
+        console.log('Erro:', error)
+    }
+}
+
+
+carregarJSON()
+
+

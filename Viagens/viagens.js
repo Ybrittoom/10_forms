@@ -1,7 +1,13 @@
-fetch('viagens.json')
-    .then(Response => Response.json())
-    .then(data => {
-        
+async function carregarJSON() {
+    try {
+        const response = await fetch('viagens.json')
+
+        if (!response.ok) {
+            throw new Error('Erro ao ler o arquivo')
+        }
+
+        const data = await response.json()
+
         data.forEach(viagens => {
             
             console.log("Pais:", viagens.pais)
@@ -11,7 +17,17 @@ fetch('viagens.json')
             console.log('----------')
             
         });
-    })
-    .catch(error => {
-        console.error('Erro ao ler o arquivo JSON')
-    })
+
+    } catch (erro) {
+        console.log("Erro:", erro)
+    }
+}
+
+carregarJSON()
+
+
+
+
+
+
+

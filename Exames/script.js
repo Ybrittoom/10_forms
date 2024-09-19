@@ -1,7 +1,13 @@
-fetch('exames.json')
-    .then(Response =>/*converte o conteúdo do corpo da resposta HTTP (que é um texto JSON) em um objeto JavaScript.*/ Response.json())
-    .then( data => {
-        
+async function carregarJSON() {
+    try {
+        const response = await fetch('exames.json')
+
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
+
+        const data = await response.json()
+
         data.forEach(exame => {
             console.log("Exame:", exame.exame)
             console.log("Tipo:", exame.tipo)
@@ -9,9 +15,10 @@ fetch('exames.json')
             console.log("Reultado:", exame.resultado)
             console.log("----------")
         });
-    })
-    .catch (error => [
-        console.error('Error ao ler o arquivo JSON')
-    ])
+    } catch (error) {
+        console.log("Erro:", error)
+    }
+}
 
-    
+carregarJSON()
+

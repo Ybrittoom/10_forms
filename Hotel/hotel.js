@@ -1,6 +1,13 @@
-fetch('hotel.json')
-    .then(Response => Response.json())
-    .then( data => {
+async function carregarJSON() {
+    try {
+        const response = await fetch('hotel.json')
+
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
+
+        const data = await response.json()
+
         
         data.forEach( hotel => {
             console.log("Quarto:", hotel.quarto)
@@ -9,7 +16,17 @@ fetch('hotel.json')
             console.log("Dias:", hotel.dias)
             console.log("-------------")
         });
-    })
-    .catch (error => {
-        console.error('Erro ao ler o arquivo JSON')
-    })
+    } catch (error) {
+        console.log("Erro:", error)
+     }
+}
+
+carregarJSON()
+
+
+
+
+
+
+
+   

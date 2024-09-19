@@ -1,6 +1,13 @@
-fetch('ocorrencia.json')
-    .then(Response => Response.json())
-    .then( data => {
+async function carregarJSON() {
+    try {
+        const response = await fetch('ocorrencia.json')
+
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
+
+        const data = await response.json()
+
         data.forEach(ocorr  => {
             console.log("JSON")
             console.log("Nome:", ocorr.nome)
@@ -9,7 +16,18 @@ fetch('ocorrencia.json')
             console.log("Codigo penal:", ocorr.codigo_penal)
             console.log("------------")
         });
-    })
-    .catch (error => {
-        console.log("Erro ao ler o arquivo JSON:", error)
-    })
+
+    } catch (error) {
+        console.log("Erro:", error)
+    }
+
+
+}
+
+carregarJSON()
+
+
+
+
+
+

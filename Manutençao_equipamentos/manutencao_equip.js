@@ -1,6 +1,13 @@
-fetch('manutencao_equip.json')
-    .then(Response => Response.json())
-    .then( data => {
+async function carregarJSON() {
+    try {
+        const response = await fetch('manutencao_equip.json')
+
+        if (!response.ok) {
+            throw new Error("Erro ao carregar o arquivo")
+        }
+
+        const data = await response.json()
+
         
         data.forEach( manuEquip => {
             console.log("Equipamento:", manuEquip.equipamento)
@@ -8,9 +15,19 @@ fetch('manutencao_equip.json')
             console.log("Status do equipamento:", manuEquip.status_do_equipamento)
             console.log("custo:", manuEquip.custo)
             console.log("----------")
-
+        
         });
-    }) 
-    .catch (error => {
-        console.error('Erro ao lert o arquivo JSON', error)
-    })
+    } catch (error) {
+        console.log("Erro:", error)
+    }
+}
+
+carregarJSON()
+
+
+
+
+
+
+
+
