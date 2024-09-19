@@ -1,26 +1,15 @@
-async function carregarYAML(file ) {
-    try {
-        const response = await fetch('ocorrencia.yaml')
-
-        if (!response.ok) {
-            throw new Error("Erro ao carregar o arquivo")
-        }
-
-        const text = await response.text()
-
-        const ocorrencia = jsyaml.load(text)
-
-        ocorrencia.forEach(ocorr => {
+fetch('ocorrencia.json')
+    .then(Response => Response.json())
+    .then( data => {
+        data.forEach(ocorr  => {
+            console.log("JSON")
             console.log("Nome:", ocorr.nome)
-            console.log("Local do Ocorrido:", ocorr.local_ocorrido)
+            console.log("Local do ocorrido:", ocorr.local_do_ocorrido)
             console.log("Data do ocorrido:", ocorr.data_do_ocorrido)
-            console.log("Codigo Penal(numero):", ocorr.codigo_penal)
-            console.log('-----------------')
-
+            console.log("Codigo penal:", ocorr.codigo_penal)
+            console.log("------------")
         });
-    }   catch (error) {
-        console.log("Erro ao carregar o arquivo:", error)
-    }
-}
-
-carregarYAML("ocorrencia.yaml")
+    })
+    .catch (error => {
+        console.log("Erro ao ler o arquivo JSON:", error)
+    })
