@@ -1,15 +1,15 @@
 <Exames> 
 
     <exame> 
-        <Nome> Tomografia </exame>
-        <tipo> imagem </tipos>
+        <Nome> Tomografia </Nome>
+        <tipo> imagem </tipo>
         <data_de_realizacao> 2022-11-04 </data_de_realizacao>
         <resultado> normal </resultado>
     </exame>
 
     <exame> 
-        <Nome> Radiografia </exame>
-        <tipo> imagem </tipos>
+        <Nome> Radiografia </Nome>
+        <tipo> imagem </tipo>
         <data_de_realizacao> 2024-02-19 </data_de_realizacao>
         <resultado> Alteraçao </resultado>
     </exame>

@@ -22,6 +22,7 @@ async function carregarXML() {
             console.log("Familia do animal:", familiaAnimal)
             console.log("Raça:", raca)
             console.log("Dono do animal:", donoAnimal)
+            console.log("@@@@@@@@@@@@@@@")
         })
     } catch (error) {
         console.log("Erro", error)

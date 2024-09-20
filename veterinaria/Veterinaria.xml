@@ -2,14 +2,14 @@
 
     <Cliente>
         <nome_do_animal> Kenny </nome_do_animal>
-        <familia_do-animal> Felino  </familia_do-animal>
+        <familia_do_animal> Felino  </familia_do_animal>
         <raca> siberiano </raca>
         <dono_do_animal> Yago </dono_do_animal>
     </Cliente>
 
     <Cliente>
         <nome_do_animal> Alaska </nome_do_animal>
-        <familia_do-animal> canina  </familia_do-animal>
+        <familia_do_animal> canina  </familia_do_animal>
         <raca> husk siberiano </raca>
         <dono_do_animal> rosekely </dono_do_animal>
     </Cliente>
