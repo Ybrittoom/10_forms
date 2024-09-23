@@ -18,6 +18,7 @@ async function carregarXML() {
             const ano = carro.getElementsByTagName("Ano")[0].textContent.trim();
             const preco = carro.getElementsByTagName("Preco")[0].textContent.trim();
 
+            console.log("@XML@")
             console.log("Carro:", modelo);
             console.log("Marca:", marca);
             console.log("Ano:", ano);

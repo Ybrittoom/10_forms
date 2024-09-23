@@ -2,7 +2,7 @@
 async function carregarYAML(file) {
     try {
         //faz uma requisiçao conpara obter o arquivo YAML
-        const response = await fetch(file)
+        const response = await fetch('alugueCarros.yml')
         //verifica se a resposta foi bemm-sucedida
         if (!response.ok) {
             throw new Error("Erro ao carregar o arquivo")
