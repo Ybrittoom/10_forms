@@ -1,12 +1,12 @@
 <Aluguel_carros>
     <Carro>
-        <Carro>BMW X5</Carro>
+        <Modelo>BMW X5</Modelo>
         <Marca>BMW</Marca>
         <Ano>2024</Ano>
         <Preco>595000.00</Preco>
     </Carro>
     <Carro>
-        <Carro>BMW 5 Series</Carro>
+        <Modelo>BMW 5 Series</Modelo>
         <Marca>BMW</Marca>
         <Ano>2024</Ano>
         <Preco>272000.00</Preco>

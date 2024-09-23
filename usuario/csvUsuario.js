@@ -1,6 +1,6 @@
 async function carregarCSV() {
     try {
-        const response = await fetch('biblioteca.csv')
+        const response = await fetch('usuario.csv')
 
         if (!response.ok) {
             throw new Error("Erro ao carregar o arquivo")
@@ -20,10 +20,11 @@ async function carregarCSV() {
 
                 console.log("$CSV$")
                 console.log("Id", objeto.id)
-                console.log("Livro:", objeto.livro)
-                console.log("Autor:", objeto.autor)
-                console.log("Categoria:", objeto.categoria)
-                console.log("Ano de publicaçao:", objeto.ano_de_publicacao)
+                console.log("Nome:", objeto.nome)
+                console.log("Sexo:", objeto.sexo)
+                console.log("Email:", objeto.email)
+                console.log("Telefone:", objeto.telefone)
+                console.log("Endereço:", objeto.endereco)
                 console.log("$$$$$$$$$$$")
             }
         })

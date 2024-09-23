@@ -1,3 +1,3 @@
-id, nome, local_do-ocorrido, data_do_ocorrido, codigo_penal
+id, nome, local_do_ocorrido, data_do_ocorrido, codigo_penal
 1, Marta, SuperMercado, 2024-02-04, 121
 2, Pedro, centro de cidade, 2023_12_31

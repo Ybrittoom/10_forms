@@ -10,15 +10,15 @@ async function carregarXML() {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, "application/xml");
 
-        const carros = xmlDoc.getElementsByTagName("Carro"); 
+        const carros = xmlDoc.getElementsByTagName("Carro");
 
         Array.from(carros).forEach(carro => {
-            const modelo = carro.getElementsByTagName("Carro")[0].textContent.trim(); 
+            const modelo = carro.getElementsByTagName("Modelo")[0].textContent.trim();
             const marca = carro.getElementsByTagName("Marca")[0].textContent.trim();
             const ano = carro.getElementsByTagName("Ano")[0].textContent.trim();
             const preco = carro.getElementsByTagName("Preco")[0].textContent.trim();
 
-            console.log("@XML@")
+            console.log("@XML@");
             console.log("Carro:", modelo);
             console.log("Marca:", marca);
             console.log("Ano:", ano);

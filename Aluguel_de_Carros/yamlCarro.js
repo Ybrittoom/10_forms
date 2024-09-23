@@ -20,7 +20,7 @@ async function carregarYAML(file) {
 
         //exibe no console do navegador
         carros.forEach( carro  => {
-            sole.log("Carro:", carro.Carro)
+            console.log("Carro:", carro.Carro)
             console.log("Marca:", carro.Marca)
             console.log("Ano:", carro.Ano)
             console.log("Preço:", carro.Preco)

@@ -1,6 +1,6 @@
 async function carregarCSV() {
     try {
-        const response = await fetch('biblioteca.csv')
+        const response = await fetch('veterinaria.csv')
 
         if (!response.ok) {
             throw new Error("Erro ao carregar o arquivo")
@@ -20,10 +20,10 @@ async function carregarCSV() {
 
                 console.log("$CSV$")
                 console.log("Id", objeto.id)
-                console.log("Livro:", objeto.livro)
-                console.log("Autor:", objeto.autor)
-                console.log("Categoria:", objeto.categoria)
-                console.log("Ano de publicaçao:", objeto.ano_de_publicacao)
+                console.log("Nome do animal:", objeto.nome_do_animal)
+                console.log("familia do animal:", objeto.familia_do_animal)
+                console.log("Raça do animal:", objeto.raca_do_animal)
+                console.log("Dono do animal:", objeto.dono_do_animal)
                 console.log("$$$$$$$$$$$")
             }
         })
